@@ -8,8 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "tests": "vitest",
-    "tests:coverage": "vitest run --coverage"
+    "test": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@faker-js/faker": "^8.4.1",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
@@ -27,6 +28,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.3.1",
     "@vitest/coverage-v8": "^2.0.5",
+    "@vitest/ui": "^2.0.5",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
