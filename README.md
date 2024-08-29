@@ -1,5 +1,16 @@
 # React + TypeScript + Vite
 
+dependences:
+npm i @testing-library/jest-dom -D (quem renderiza os componentes no teste, tenha acesso a uma DOM virtual)
+npm i @testing-library/react -D (p/trabalhar com a biblioteca react)
+npm i @testing-library/user-event -D (p/ eventos de clicks e etc.)
+npm i @vitest/coverage-v8 -D   (para ver a cobertura de teste sobre o codigo)
+npm i jsdom -D (gera uma DOM virtual, ja que o ambiente de teste não tem acesso ao navegador)
+
+npm i sass
+npm i react-router-dom
+npm i @types/react-router-dom -D
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
