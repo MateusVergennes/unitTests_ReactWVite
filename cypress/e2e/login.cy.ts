@@ -28,4 +28,10 @@ describe('testa a pagina de login', () => {
     cy.contains("Nao tem cadastro ? Clique aqui!").click()
     cy.contains("Cadastre-se")
   })
+
+  it("O botao deve ter 10px de margin top", () => {
+    cy.visit('/sign-up')
+
+    cy.get('div').find('button').should("have.css", "marginTop").and('match', /10px/)
+})
 })
