@@ -18,10 +18,15 @@ export default function Dashboard({fetchPokemonList}: IProps) {
 
   useEffect(() => {
     (async () => {
-      const data = await fetchPokemonList()
-      setPokemons(data)
-    })()
-  }, [])
+      try {
+        const data = await fetchPokemonList();
+        setPokemons(data);
+      } catch (error) {
+        console.error("Failed to fetch Pokemon list", error);
+      }
+    })();
+  }, [fetchPokemonList]);
+  
 
   return (
     <div className={styles.container}>
